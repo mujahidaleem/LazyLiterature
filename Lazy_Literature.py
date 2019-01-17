@@ -79,7 +79,7 @@ def mimic_text(word_dict: Dict[Tuple[str], List[str]], num_words: int,
 
 if __name__ == '__main__':
     # Read a text and remember the words and what comes after them in a dict
-    f = open(input("Training text: ")) #Import a piece of literature here
+    f = open(input("alice.txt")) #Import a piece of literature here. Alice is provided as an example.
     d = make_dictionary(f)
     f.close()
     print(mimic_text(d, 100))
